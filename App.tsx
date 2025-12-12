@@ -48,9 +48,9 @@ const App: React.FC = () => {
       <Snowfall />
       
       {/* Left Column - Fixed Info */}
-      <aside className="w-full lg:w-1/3 xl:w-1/4 lg:h-screen lg:sticky lg:top-0 flex flex-col justify-center items-center p-8 z-20 text-center border-b lg:border-b-0 lg:border-r border-christmas-red bg-christmas-darkRed shadow-xl">
+      <aside className="w-full lg:w-1/3 xl:w-1/4 lg:h-screen lg:sticky lg:top-0 flex flex-col justify-center items-center p-6 z-20 text-center border-b lg:border-b-0 lg:border-r border-christmas-red bg-christmas-darkRed shadow-xl">
         <div className="space-y-6 max-w-md mx-auto">
-          <div className="text-6xl mb-4 animate-bounce-slow">🎄</div>
+          <div className="text-6xl animate-bounce-slow"><br/>🎄</div>
           
           <h1 className="font-christmas text-4xl lg:text-5xl font-bold text-white leading-tight">
             CALENDARIO DE ADVIENTO 2025
@@ -68,15 +68,16 @@ const App: React.FC = () => {
               <strong>24 canciones</strong> que marcaron nuestra historia<br/>
               + <strong>1 sorpresa especial</strong> en Navidad.
             </p>
-            <p className="mt-4 text-base italic opacity-80">
-              Cada día, desde el 1 hasta el 25 de diciembre, se abrirá una nueva puerta… una canción, un recuerdo, un pedacito de nosotros.
+            <p className="mt-4 text-base-gold italic opacity-80">
+              Cada día, desde el 1 hasta el 25 de diciembre, se desbloqueará una nueva canción, un pedacito de nosotros.
             </p>
-            <p className="mt-4 font-christmas text-2xl text-christmas-red bg-christmas-cream px-4 py-2 rounded-lg inline-block transform rotate-2">
+            <p className="mt-4 font-christmas text-2xl text-christmas-gold bg-christmas-cream px-4 py-2 rounded-lg inline-block transform rotate-2">
+              <CountDownClock />
+            </p>
+            <p className="mt-4">
               Porque nuestro amor también se celebra con detalles. ❤️
             </p>
           </div>
-
-          <CountDownClock />
         </div>
       </aside>
 

@@ -9,7 +9,7 @@ const Snowfall: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden" aria-hidden="true">
+    <div className="fixed inset-0 pointer-events-none z-40 overflow-hidden" aria-hidden="true">
       {snowflakes.map((i) => {
         const left = Math.random() * 100;
         const animationDuration = 5 + Math.random() * 10;

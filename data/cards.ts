@@ -80,8 +80,8 @@ export const cardsData: CardJson = {
       "title": "Qué Suerte Tenerte – Fonseca",
       "spotifyUrl": "https://open.spotify.com/intl-es/track/5Vn2XpqzUOozKNmBmAgysw?si=bfdba4355c2b4df7",
       "lyricSnippet": "Qué suerte tenerte aquí vestida de blanco, siento que vuelo, que soy dueño de un banco, que tengo poderes solo porque te amo, que lo tengo todo si te tengo a mi lado.",
-      "text": "La canción de nuestra boda. No pude sentirme más afortunado que ese día.",
-      "hint": "Esta fue la canción que bailamos en nuestra boda, aunque al principio no entraste tú sino yo cuando llegue donde Tutu, pero igual terminamos yéndonos juntos, como debía ser. El título no podría ser más exacto: realmente soy el hombre más afortunado del mundo por haberte tenido allí, vestida de blanco, convirtiéndote en mi esposa. Entre miles de personas posibles, me escogiste a mí, y eso hace que cada vez que escucho esta canción recuerde que mi mayor fortuna no está en las cosas materiales, sino en haberte tenido frente al altar, tomando mi mano y eligiéndome para compartir tu vida conmigo."
+      "text": "Esta fue la canción que bailamos en nuestra boda, aunque al principio no entraste tú sino yo cuando llegue donde Tutu, pero igual terminamos yéndonos juntos, como debía ser. El título no podría ser más exacto: realmente soy el hombre más afortunado del mundo por haberte tenido allí, vestida de blanco, convirtiéndote en mi esposa. Entre miles de personas posibles, me escogiste a mí, y eso hace que cada vez que escucho esta canción recuerde que mi mayor fortuna no está en las cosas materiales, sino en haberte tenido frente al altar, tomando mi mano y eligiéndome para compartir tu vida conmigo.",
+      "hint": "La canción de nuestra boda. No pude sentirme más afortunado que ese día."
     },
     {
       "id": 10,
@@ -221,11 +221,11 @@ export const cardsData: CardJson = {
     {
       "id": 25,
       "image": "/img/25.webp",
-      "title": "Regalo de Navidad",
+      "title": "Wapa – Para Laura ❤️",
       "spotifyUrl": "",
-      "lyricSnippet": "Feliz Navidad mi amor...",
-      "text": "Hoy no hay canción, hoy el regalo eres tú y la vida que estamos construyendo. Gracias por estos 25 días y por todos los que faltan. Te amo infinitamente. ¡Feliz Navidad!",
-      "hint": "¡Abre tu regalo real!"
+      "lyricSnippet": "Wapa, eres todo lo que pedí, más de lo que soñé, Dios fue bueno conmigo. Wapa, me enamoré de ti, desde que abriste esa puerta y sigo eligiéndote a ti.",
+      "text": "Este es el regalo más especial de todos: una canción escrita solo para ti, que cuenta nuestra historia desde el día que abriste esa puerta en casa de Tutu hasta hoy...",
+      "hint": "🎄 ¡Feliz Navidad, mi amor! Tu regalo más especial te espera... una canción escrita solo para ti. 🎶❤️"
     }
   ]
 };

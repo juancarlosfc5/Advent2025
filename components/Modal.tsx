@@ -10,6 +10,19 @@ const Modal: React.FC<ModalProps> = ({ card, onClose }) => {
   const [showHint, setShowHint] = useState(false);
   const [imgError, setImgError] = useState(false);
 
+  // Block body scroll when modal is open
+  useEffect(() => {
+    // Save the original overflow style
+    const originalOverflow = document.body.style.overflow;
+    // Block scroll on body
+    document.body.style.overflow = 'hidden';
+    
+    // Restore original overflow when modal closes
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
+
   // Close on Escape key
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -19,9 +32,22 @@ const Modal: React.FC<ModalProps> = ({ card, onClose }) => {
     return () => window.removeEventListener('keydown', handleEsc);
   }, [onClose]);
 
+  // Prevent scroll on overlay click
+  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm transition-opacity duration-300">
-      <div className="relative w-full max-w-2xl bg-christmas-cream text-gray-800 rounded-lg shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm transition-opacity duration-300"
+      onClick={handleOverlayClick}
+    >
+      <div 
+        className="relative w-full max-w-2xl bg-christmas-cream text-gray-800 rounded-lg shadow-2xl overflow-hidden flex flex-col max-h-[90vh] my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         
         {/* Header Image */}
         <div className="h-48 w-full bg-christmas-darkRed overflow-hidden relative group">
@@ -71,11 +97,11 @@ const Modal: React.FC<ModalProps> = ({ card, onClose }) => {
                 </svg>
             </a>
 
-            <div className="mb-6 relative pl-6 border-l-4 border-christmas-gold italic text-gray-600 bg-gray-50 p-4 rounded-r-lg">
+            <div className="whitespace-pre-line mb-6 relative pl-6 border-l-4 border-christmas-gold italic text-gray-600 bg-gray-50 p-4 rounded-r-lg">
                 "{card.lyricSnippet}"
             </div>
 
-            <div className="prose prose-stone max-w-none text-gray-800 mb-8 leading-relaxed text-lg">
+            <div className="whitespace-pre-line prose prose-stone max-w-none text-gray-800 mb-8 leading-relaxed text-lg">
                 {card.text}
             </div>
 

@@ -23,7 +23,7 @@ const CountDownClock: React.FC = () => {
   }, []);
 
   return (
-    <div className=" font-christmas text-2xl text-christmas-red tracking-wider animate-pulse">
+    <div className=" font-christmas text-2xl text-christmas-red font-extrabold tracking-wider animate-pulse">
       Hora mágica:  {timeString}
     </div>
   );

@@ -221,11 +221,11 @@ export const cardsData: CardJson = {
     {
       "id": 25,
       "image": "/img/25.webp",
-      "title": "Wapa – Para Laura ❤️",
-      "spotifyUrl": "",
+      "title": "Wapa – Juan C.",
+      "spotifyUrl": "https://youtu.be/O7Fj-g9UpAM",
       "lyricSnippet": "Wapa, eres todo lo que a Dios pedí,\nMucho más de lo que soñé, él te hizo para mí,\nWapa, perdidamente me enamoré de ti,\nDesde que abriste esa puerta y por primera vez te vi",
-      "text": "Este es el regalo más especial de todos: una canción escrita solo para ti, que cuenta nuestra historia desde el día que abriste esa puerta en casa de Tutu hasta hoy...",
-      "hint": "🎄 ¡Feliz Navidad, mi amor! Tu regalo más especial te espera... una canción escrita solo para ti. 🎶❤️"
+      "text": "Este es el regalo más especial de todos: una canción escrita solo para ti, que cuenta nuestra historia desde el día que te conocí hasta hoy.\nCada palabra, cada verso y cada nota llevan todo lo que siento por ti.\n\nA eso me refiero cuando digo “eso y más”. No soy el mejor con el ritmo ni con la música tú lo sabes hahahahaha, pero sí el mejor en amarte, así que me apoyé un poco 😅, para transformar lo que pudo ser solo una carta en el video que más te va a gustar ver en YouTube. \n\nEspero que te guste, porque de verdad es el regalo más especial que he hecho en mi vida, te amo mucho. ❤️",
+      "hint": "🎄 ¡Feliz Navidad, mi amor! Tu regalo más especial llegó... Haz click en el link🎶❤️"
     }
   ]
 };

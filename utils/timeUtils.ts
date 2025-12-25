@@ -21,6 +21,10 @@ export const getBogotaDate = (): Date => {
 };
 
 export const isCardUnlocked = (day: number): boolean => {
+  // TEMPORAL: Desbloquear tarjeta 25 para previsualización
+  // TODO: Eliminar esta línea después de la previsualización
+  // if (day === 25) return true;
+  
   const now = getBogotaDate();
   
   // If year is past the calendar year, unlock all
